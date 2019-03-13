@@ -1,0 +1,28 @@
+body {
+    font: 1.1rem var(--font-family-sans-serif);
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.bg-main {
+    background-color: #233d58;
+}
+
+.bg-section-primary {
+    background-color: #006cdf;
+}
+
+.bg-section-secondary {
+    background-color: #004792;
+}
+
+.bg-section-accent {
+    background-color: #920047;
+}
+
+.btn {
+    border-radius: 30px;
+}
