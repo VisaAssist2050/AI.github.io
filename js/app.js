@@ -12,6 +12,10 @@ function hide(element_id) {
   $(element_id).prop('hidden', true);
 }
 
+function show_tab(tab_id) {
+  $('#navbarList a[href=\"'+tab_id+'\"]').tab('show');
+}
+
 // Mail send function (with mailto)
 function send_mail() {
   var recipient_addr = $("#recipient-mail")[0].innerHTML;

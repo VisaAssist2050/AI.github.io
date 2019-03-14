@@ -26,3 +26,44 @@ body {
 .btn {
     border-radius: 30px;
 }
+
+/* Brands (mostly for footer) */
+.brand {
+    background-color: #282828;
+    border-radius: 20%;
+    transition: all .2s 0s ease-in-out;
+    padding: .156rem .28rem;
+    color: #fff;
+}
+.brand:hover {
+    background: #fff;
+}
+.brand-meetup:hover {
+    color: #f64060;
+}
+.brand-facebook:hover {
+    color: #4267b2;
+}
+.brand-twitter:hover {
+    color: #1da1f2;
+}
+.brand-instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: #fff;
+}
+.brand-youtube:hover {
+    color: #FF0000;
+}
+.brand-medium:hover {
+    color: #000;
+}
+
+/* 
+<a class="navbar-brand mx-3 brand brand-meetup" href="https://meetup.com/es-ES/AI-Learners/"><i class="fab fa-meetup"></i></a>
+<a class="navbar-brand mx-3 brand brand-facebook" href="https://www.facebook.com/AILearners/"><i class="fab fa-facebook-square"></i></a>
+<a class="navbar-brand mx-3 brand brand-twitter" href="https://twitter.com/AI_Learners"><i class="fab fa-twitter"></i></a>
+<a class="navbar-brand mx-3 brand brand-instagram" href="https://www.instagram.com/ai_learners/"><i class="fab fa-instagram"></i></a>
+<a class="navbar-brand mx-3 brand brand-youtube" href="https://www.youtube.com/channel/UCZlBHpSLx5b7324E3epo9FQ"><i class="fab fa-youtube"></i></a>
+<a class="navbar-brand mx-3 brand brand-medium" href="https://medium.com/ai-learners"><i class="fab fa-medium"></i></a>
+*/

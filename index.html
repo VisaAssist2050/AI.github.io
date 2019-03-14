@@ -71,8 +71,8 @@
 			<div class="collapse navbar-collapse" id="navbarList">
 					<div class="nav navbar-nav nav-pills ml-auto" role="tablist">
 						<a class="nav-link active" href="#home" data-toggle="pill" role="tab" id="home-nav" aria-controls="home" aria-selected="true">Inicio <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#about" data-toggle="pill" role="tab" id="about-nav" aria-controls="about" aria-selected="false">Sobre nosotros</a>
 						<a class="nav-link" href="#team" data-toggle="pill" role="tab" id="team-nav" aria-controls="team" aria-selected="false">Equipo</a>
-						<a class="nav-link" href="#themes" data-toggle="pill" role="tab" id="themes-nav" aria-controls="themes" aria-selected="false">Temas</a>
 						<a class="nav-link" href="#events" data-toggle="pill" role="tab" id="events-nav" aria-controls="events" aria-selected="false">Eventos</a>
 					</div>
 			</div>
@@ -88,10 +88,10 @@
 				<div class="full-page-logo d-flex justify-content-center">
 					<div class="text-center my-5">
 						<header>
-							<h4>Comunidad de inteligencia Artificial</h4>
 							<h1 class="display-4">AI Learners</h1>
 						</header>
 						<img src="./public/img/ailearners.png" alt="Logo" style="width:100%;">
+						<button class="btn btn-primary btn-lg btn-block my-3" style="white-space: normal;" onclick="show_tab('#about');">Quiero saber más sobre la comunidad</button>
 						<button class="btn btn-outline-warning btn-lg btn-block my-3" data-toggle="modal" data-target="#contact-modal">Contacto</button>
 					</div>
 				</div>
@@ -116,7 +116,7 @@
 							<img src="./public/img/Team-Michelle.jpeg" class="img-fluid rounded-circle border border-light" alt="">
 							<div class="carousel-caption">
 								<!-- Link to social media for team member -->
-								<a href="#">
+								<a href="https://twitter.com/MichDiaz_">
 									<!-- Team member's name -->
 									<h4 class="bg-light text-black rounded mb-0">Michelle Díaz
 										<!-- Social media icon (font awesome) -->
@@ -128,8 +128,7 @@
 							</div>
 						</div>
 						<div class="col member-info align-self-center">
-							<h5>Años de experiencia en Lorem</h5>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, quasi. Magnam iste placeat quisquam numquam soluta voluptate tempore. Perferendis molestiae omnis maiores sit aut minima eum ut excepturi quis minus.</p>
+							<p><span class="lead">Ingeniera Informática del Instituto Politécnico Nacional</span> graduada haciendo investigación de procesamiento de lenguaje natural aplicado al sector médico. Michelle es la fundadora de HackrobotsMX, la primera comunidad sin fines de lucro en robótica dedicada a la educación y entrenamiento en diversas áreas. En el 2018 fue seleccionada como una de las mejores 200 investigadores a nivel internacional para asistir al HLF6 en Alemania.</p>
 						</div>
 					</div>
 					<!-- even number team member (right leaning) -->
@@ -138,7 +137,7 @@
 							<img src="./public/img/Team-Omar.jpg" class="img-fluid rounded-circle border border-light" alt="">
 							<div class="carousel-caption">
 								<!-- Link to social media for team member -->
-								<a href="#">
+								<a href="https://twitter.com/osanseviero">
 									<!-- Team member's name -->
 									<h4 class="bg-light text-black rounded mb-0">Omar Sanseviero
 										<!-- Social media icon (font awesome) -->
@@ -150,19 +149,49 @@
 							</div>
 						</div>
 						<div class="col member-info align-self-center">
-							<h5>Escupe código</h5>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, quasi. Magnam iste placeat quisquam numquam soluta voluptate tempore. Perferendis molestiae omnis maiores sit aut minima eum ut excepturi quis minus.</p>
-							<h5>You're gonna go far, kid.</h5>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, quasi.</p>
+							<p><span class="lead">Ingeniero de Software egresado del Tecnológico de Monterrey</span>, Omar es apasionado por impulsar la educación. Ha trabajado en Google dentro de Google Cloud y Google Assistant. Ha presentado charlas y cursos de temas como Machine Learning y Deep Learning. En Google, implementó modelos de ML para analizar el comportamiento de millones de usuarios. Previo a su trabajo en Google, fue mentor de Udacity en su Nanodegree de AI, donde trabajó con estudiantes de diferentes contextos a través de mentoría, revisión de código y apoyo personal.</p>
+						</div>
+					</div>
+					<!-- odd number team member (left leaning) -->
+					<div class="mb-4 row team-member mr-lg-5 pr-lg-5">
+						<div class="col-lg-4 col-md-5 col-sm-6 member-photo d-block">
+							<img src="./public/img/Team-Santiago.jpg" class="img-fluid rounded-circle border border-light" alt="">
+							<div class="carousel-caption">
+								<!-- Link to social media for team member -->
+								<a href="https://santiagorenterialab.com">
+									<!-- Team member's name -->
+									<h4 class="bg-light text-black rounded mb-0">Santiago Rentería
+										<!-- Social media icon (font awesome) -->
+										<i class="text-black fas fa-link"></i>
+									</h4>
+								</a>
+								<!-- Position description of team member (currently disabled, to enable uncomment next line and change h4 class to rounded-top) -->
+								<!-- <p class="bg-light text-black rounded-bottom  mb-0"><small>Organizadora y mentora</small></p> -->
+							</div>
+						</div>
+						<div class="col member-info align-self-center">
+							<p><span class="lead">Ingeniero en producción musical digital egresado del Tecnológico de Monterrey.</span> Ha realizado investigación en torno a la influencia de la música en el cerebro, así como también colaborado con artistas en la producción de obras de arte interactivo. Su principal interés es el desarrollo de tecnología que aumente la creatividad y la percepción a través de la inteligencia artificial. Actualmente cursa un posgrado en ciencias computacionales y colabora con Clubes de Ciencia en el diseño de talleres interdisciplinarios.</p>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 		
-		<!-- Themes tab -->
-		<div class="tab-pane fade" role="tabpanel" id="themes" aria-labelledby="themes-nav">
-			<section class="tab-content">
+		<!-- about tab -->
+		<div class="tab-pane fade" role="tabpanel" id="about" aria-labelledby="about-nav">
+			<section class="tab-content pb-5">
+				<!-- Qué es -->
+				<div class="bg-light text-black">
+					<div class="container">
+						<header class="mx-2 pb-1">
+							<h3 class="display-4">¿Qué es la comunidad de AI Learners?</h3>
+						</header>
+					</div>
+				</div>
+				<div class="container mt-1 py-4">
+					<p>AI Learners es una comunidad de personas que buscan aprender y discutir temas sobre Inteligencia Artificial y sus diferentes enfoques y aplicaciones. En nuestros meetups ofrecemos charlas y talleres de temas como Machine Learning, Deep Learning, procesamiento de lenguaje natural y visión computacional, entre otros. Está abierta a gente de todos los niveles de conocimiento y formación disciplinaria.</p>
+				</div>
+				<!-- themes -->
 				<div class="bg-light text-black">
 					<div class="container">
 						<header class="mx-2 pb-1">
@@ -171,7 +200,7 @@
 						</header>
 					</div>
 				</div>
-				<div class="container mt-1 pb-5">
+				<div class="container mt-1 pb-4">
 					<div id="themes-carousel" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<!-- To add more carousel sections, add new li here and a new .carousel-item in .carousel-inner -->
@@ -180,7 +209,7 @@
 							<li data-target="#themes-carousel" data-slide-to="2"></li>
 						</ol>
 						<div class="carousel-inner">
-							<!-- Each carousel item should contain two themes -->
+							<!-- Each carousel item should contain two about -->
 							<div class="carousel-item active">
 								<div class="row m-5">
 									<!-- Theme block -->
@@ -279,6 +308,32 @@
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
+					</div>
+				</div>
+				<!-- ¿Por que Ai learners? -->
+				<div class="bg-light text-black">
+					<div class="container">
+						<header class="mx-2 pb-1">
+							<h3 class="display-4">¿Por qué creamos AI Learners?</h3>
+						</header>
+					</div>
+				</div>
+				<div class="container mt-1 py-4">
+					<p>Mientras que el número de startups de AI en diferentes países ha aumentado, en México es un área de mucho interés pero con poco crecimiento. La inversión y el número de iniciativas privadas basadas en esta tecnología han aumentado considerablemente a nivel global, a tal grado que la Inteligencia Artificial suele ser considerada por algunos de sus practicantes como la nueva electricidad. Es decir, existe un campo amplio de aplicación de AI en la industria y la sociedad. No obstante, aunque México es uno de los primeros países en desarrollar una estrategia de AI, la investigación (en las ramas contemporáneas) es incipiente y su conocimiento no está democratizado.</p>
+					<h5>Nuestros objetivos son:</h5>
+					<ul>
+						<li>Eventos mensuales para crear una comunidad interdisciplinaria.</li>
+						<li>Crear un ambiente diverso y amigable para aprender sobre Inteligencia Artificial.</li>
+						<li>Divulgación de IA a través de redes sociales, página web y podcast.</li>
+					</ul>
+				</div>
+				<!-- ¿Quienes son? -->
+				<div class="bg-light text-black">
+					<div class="container">
+						<header class="mx-2 pb-1">
+							<button class="btn btn-primary btn-lg my-3" style="white-space: normal;" onclick="show_tab('#team');">Quiero saber quiénes son</button>
+							<button class="btn btn-primary btn-lg my-3" style="white-space: normal;" onclick="show_tab('#events');">Quiero saber sobre sus evento</button>
+						</header>
 					</div>
 				</div>
 			</section>
@@ -396,12 +451,13 @@
 
 	<!-- Page footer with social links -->
 	<nav id="page-footer" class="navbar fixed-bottom">
-		<div class="mt-3 w-100 d-flex justify-content-center pages">
-			<a class="navbar-brand mx-3" href="#"><i class="fab fa-meetup" style="color: #f64060;"></i></a>
-			<a class="navbar-brand mx-3" href="#"><i class="fab fa-facebook-square" style="color: #4267b2;"></i></a>
-			<a class="navbar-brand mx-3" href="#"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a>
-			<a class="navbar-brand mx-3" href="#"><i class="fab fa-instagram" style="color: #fff;"></i></a>
-			<a class="navbar-brand mx-3" href="#"><i class="fab fa-medium" style="color: #fff;"></i></a>
+		<div class="mt-4 w-100 d-flex justify-content-center pages">
+			<a class="navbar-brand mx-2 brand brand-meetup" href="https://meetup.com/es-ES/AI-Learners/"><i class="fab fa-meetup"></i></a>
+			<a class="navbar-brand mx-2 brand brand-facebook" href="https://www.facebook.com/AILearners/"><i class="fab fa-facebook-square"></i></a>
+			<a class="navbar-brand mx-2 brand brand-twitter" href="https://twitter.com/AI_Learners"><i class="fab fa-twitter"></i></a>
+			<a class="navbar-brand mx-2 brand brand-instagram" href="https://www.instagram.com/ai_learners/"><i class="fab fa-instagram"></i></a>
+			<a class="navbar-brand mx-2 brand brand-youtube" href="https://www.youtube.com/channel/UCZlBHpSLx5b7324E3epo9FQ"><i class="fab fa-youtube"></i></a>
+			<a class="navbar-brand mx-2 brand brand-medium" href="https://medium.com/ai-learners"><i class="fab fa-medium"></i></a>
 		</div>
 		<div class="w-100 d-flex justify-content-center">
 				<p><small><i class="far fa-copyright"></i> 2019 All rights reserved</small></p>
